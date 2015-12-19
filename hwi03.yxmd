@@ -1,0 +1,2940 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="210" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Q5</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="222.0003" y="368" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>ShipCountry</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>USA</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[ShipCountry] = "USA"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="330.0002" y="296" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_ccf712e965bf4d349f0c7e95d6937725_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="246.0003" y="440" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_18dc818c0365449189e9737c29d68072_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="174.0003" y="428" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_8dd61c2c14d54644b5cb89023ffcbe2e_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="PortfolioPluginsGui.Geocoder.Geocoder">
+            <Position x="330.0002" y="356" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputFields>
+                <Address>ShipAddress</Address>
+                <City>ShipCity</City>
+                <State>ShipStateOrProvince</State>
+                <PostCode>ShipPostalCode</PostCode>
+                <SelectedGeocoder>PortfolioExplorer_Latest:TeleAtlas_US</SelectedGeocoder>
+              </InputFields>
+              <OutputFields>
+                <OutputField field="Lat" IsAttribute="false" fieldType="Double" fieldSize="11" xmlPath="ReturnInfo\Candidate\CommonFields" />
+                <OutputField field="Lon" IsAttribute="false" fieldType="Double" fieldSize="12" xmlPath="ReturnInfo\Candidate\CommonFields" />
+              </OutputFields>
+              <MultipleMatchMode value="2" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxGeocoder" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="378.0002" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">L:\rudu5529\Alteryx\data\uk_address.xlsx|`Sheet2$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>uk_address.xlsx
+Table=`Sheet2$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ShipPostalCode" size="255" source="File: L:\rudu5529\Alteryx\data\uk_address.xlsx|`Sheet2$`" type="V_String" />
+                <Field name="Lat" source="File: L:\rudu5529\Alteryx\data\uk_address.xlsx|`Sheet2$`" type="Double" />
+                <Field name="Lon" source="File: L:\rudu5529\Alteryx\data\uk_address.xlsx|`Sheet2$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="474.0002" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ShipPostalCode" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ShipPostalCode" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ShipPostalCode" selected="False" rename="Right_ShipPostalCode" />
+                    <SelectField field="Right_ShipName" selected="False" rename="Right_ShipName" />
+                    <SelectField field="Right_ShipAddress" selected="False" rename="Right_ShipAddress" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114.0003" y="337" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">L:\rudu5529\Alteryx\data\book_Q4.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Q4.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Int32" />
+                <Field name="FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="Photograph" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Blob" />
+                <Field name="Bio" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="V_WString" />
+                <Field name="SeqNo" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Int16" />
+                <Field name="Title" size="75" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CoverPix" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Blob" />
+                <Field name="CopyrightYear" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="SuggPrice" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="EditionNumber" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int32" />
+                <Field name="OutOfPrint" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Bool" />
+                <Field name="Pages" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="Disk" size="15" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="LinerNotes" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="TOCDoc" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int32" />
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int16" />
+                <Field name="Category" size="25" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="V_WString" />
+                <Field name="ClassName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="V_WString" />
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Int32" />
+                <Field name="Quantity" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Double" />
+                <Field name="Discount" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Float" />
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="StoreID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="OrderDate" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="DateTime" />
+                <Field name="ShipName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipAddress" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCity" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipStateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCountry" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPhoneNumber" size="30" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int16" />
+                <Field name="CCNumber" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="Printed" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+                <Field name="customer_FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Address" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="City" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="StateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Country" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PhoneNumber" size="30" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="customer_EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Password" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Admin" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Bool" />
+                <Field name="PhoneNumber_orig" size="30" source="Formula: [PhoneNumber]" type="V_WString" />
+                <Field name="ShipPhoneNumber_orig" size="30" source="Formula: [ShipPhoneNumber]" type="V_WString" />
+                <Field name="paid_by" size="64" source="Formula: IIF([PayBy]==6, 'Discover', [paid_by])" type="V_String" />
+                <Field name="fiscal_week" size="64" source="Formula: IF ISNULL([OrderDate]) then [OrderDate] else&#xA;&#xA;&quot;FW&quot;+DateTimeFormat(DateTimeAdd ([OrderDate], +2, &quot;days&quot;) , &quot;%W&quot;)&#xA;&#xA;endif" type="V_String" />
+                <Field name="timestamp" size="64" source="Formula: DateTimeToday()" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="426.0002" y="289" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_2016dbe099404353bd3b379f282f48b5_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="570.0003" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="666.0003" y="366" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_87aa51c3ad8d4a129f1140f783053708_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="666.0003" y="426" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">L:\rudu5529\Alteryx\data\book_Lat_Lon.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Lat_Lon.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54.00016" y="342" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Q6</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114.0003" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">L:\rudu5529\Alteryx\data\book_Lat_Lon.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Lat_Lon.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Int32" />
+                <Field name="FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="Photograph" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Blob" />
+                <Field name="Bio" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="V_WString" />
+                <Field name="SeqNo" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Int16" />
+                <Field name="Title" size="75" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CoverPix" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Blob" />
+                <Field name="CopyrightYear" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="SuggPrice" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="EditionNumber" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int32" />
+                <Field name="OutOfPrint" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Bool" />
+                <Field name="Pages" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="Disk" size="15" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="LinerNotes" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="TOCDoc" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int32" />
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int16" />
+                <Field name="Category" size="25" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="V_WString" />
+                <Field name="ClassName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="V_WString" />
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Int32" />
+                <Field name="Quantity" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Double" />
+                <Field name="Discount" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Float" />
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="StoreID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="OrderDate" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="DateTime" />
+                <Field name="ShipName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipAddress" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCity" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipStateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCountry" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPhoneNumber" size="30" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int16" />
+                <Field name="CCNumber" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="Printed" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+                <Field name="customer_FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Address" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="City" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="StateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Country" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PhoneNumber" size="30" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="customer_EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Password" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Admin" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Bool" />
+                <Field name="PhoneNumber_orig" size="30" source="Formula: [PhoneNumber]" type="V_WString" />
+                <Field name="ShipPhoneNumber_orig" size="30" source="Formula: [ShipPhoneNumber]" type="V_WString" />
+                <Field name="paid_by" size="64" source="Formula: IIF([PayBy]==6, 'Discover', [paid_by])" type="V_String" />
+                <Field name="fiscal_week" size="64" source="Formula: IF ISNULL([OrderDate]) then [OrderDate] else&#xA;&#xA;&quot;FW&quot;+DateTimeFormat(DateTimeAdd ([OrderDate], +2, &quot;days&quot;) , &quot;%W&quot;)&#xA;&#xA;endif" type="V_String" />
+                <Field name="timestamp" size="64" source="Formula: DateTimeToday()" type="V_String" />
+                <Field name="Lat" source="(Multiple Sources)" type="Double" />
+                <Field name="Lon" source="(Multiple Sources)" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="210.0003" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_88edfba7d8cf49a4a7248fac2badfafd_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="306.0002" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="AuthorID" selected="True" type="V_String" size="11" />
+                <SelectField field="FirstName" selected="True" type="V_String" size="50" />
+                <SelectField field="MiddleInit" selected="True" type="V_String" size="1" />
+                <SelectField field="LastName" selected="True" type="V_String" size="50" />
+                <SelectField field="EmailAddress" selected="True" type="V_String" size="50" />
+                <SelectField field="Bio" selected="True" type="V_String" size="16777216" />
+                <SelectField field="ISBNNumber" selected="True" type="V_String" size="13" />
+                <SelectField field="SeqNo" selected="True" type="V_String" size="5" />
+                <SelectField field="Title" selected="True" type="V_String" size="75" />
+                <SelectField field="CopyrightYear" selected="True" type="V_String" size="5" />
+                <SelectField field="EditionNumber" selected="True" type="V_String" size="11" />
+                <SelectField field="OutOfPrint" selected="True" type="V_String" size="1" />
+                <SelectField field="Disk" selected="True" type="V_String" size="15" />
+                <SelectField field="LinerNotes" selected="True" type="V_String" size="16777216" />
+                <SelectField field="TOCDoc" selected="True" type="V_String" size="16777216" />
+                <SelectField field="CategoryID" selected="True" type="V_String" size="11" />
+                <SelectField field="ClassID" selected="True" type="V_String" size="5" />
+                <SelectField field="Category" selected="True" type="V_String" size="25" />
+                <SelectField field="ClassName" selected="True" type="V_String" size="50" />
+                <SelectField field="OrderID" selected="True" type="V_String" size="11" />
+                <SelectField field="Quantity" selected="True" type="V_String" size="19" />
+                <SelectField field="Discount" selected="True" type="V_String" size="11" />
+                <SelectField field="CustomerID" selected="True" type="V_String" size="11" />
+                <SelectField field="StoreID" selected="True" type="V_String" size="11" />
+                <SelectField field="OrderDate" selected="True" type="V_String" size="19" />
+                <SelectField field="ShipName" selected="True" type="V_String" size="50" />
+                <SelectField field="ShipAddress" selected="True" type="V_String" size="255" />
+                <SelectField field="ShipCity" selected="True" type="V_String" size="50" />
+                <SelectField field="ShipStateOrProvince" selected="True" type="V_String" size="20" />
+                <SelectField field="ShipPostalCode" selected="True" type="V_String" size="20" />
+                <SelectField field="ShipCountry" selected="True" type="V_String" size="50" />
+                <SelectField field="ShipPhoneNumber" selected="True" type="V_String" size="30" />
+                <SelectField field="PayBy" selected="True" type="V_String" size="5" />
+                <SelectField field="CCNumber" selected="True" type="V_String" size="20" />
+                <SelectField field="Printed" selected="True" type="V_String" size="1" />
+                <SelectField field="customer_FirstName" selected="True" type="V_String" size="50" />
+                <SelectField field="customer_MiddleInit" selected="True" type="V_String" size="1" />
+                <SelectField field="customer_LastName" selected="True" type="V_String" size="50" />
+                <SelectField field="Address" selected="True" type="V_String" size="255" />
+                <SelectField field="City" selected="True" type="V_String" size="50" />
+                <SelectField field="StateOrProvince" selected="True" type="V_String" size="20" />
+                <SelectField field="PostalCode" selected="True" type="V_String" size="20" />
+                <SelectField field="Country" selected="True" type="V_String" size="50" />
+                <SelectField field="PhoneNumber" selected="True" type="V_String" size="30" />
+                <SelectField field="customer_EmailAddress" selected="True" type="V_String" size="50" />
+                <SelectField field="Password" selected="True" type="V_String" size="16" />
+                <SelectField field="PhoneNumber_orig" selected="True" type="V_String" size="30" />
+                <SelectField field="ShipPhoneNumber_orig" selected="True" type="V_String" size="30" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="498.0002" y="421" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=root|msbx5405.hwi03_rudu5529</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MySQL
+Table=msbx5405.hwi03_rudu5529</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="390.0002" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="AuthorID" selected="True" />
+                <Field field="FirstName" selected="True" />
+                <Field field="MiddleInit" selected="True" />
+                <Field field="LastName" selected="True" />
+                <Field field="EmailAddress" selected="True" />
+                <Field field="Bio" selected="True" />
+                <Field field="ISBNNumber" selected="True" />
+                <Field field="SeqNo" selected="True" />
+                <Field field="Title" selected="True" />
+                <Field field="CopyrightYear" selected="True" />
+                <Field field="SuggPrice" selected="True" />
+                <Field field="EditionNumber" selected="True" />
+                <Field field="OutOfPrint" selected="True" />
+                <Field field="Disk" selected="True" />
+                <Field field="LinerNotes" selected="True" />
+                <Field field="TOCDoc" selected="True" />
+                <Field field="CategoryID" selected="True" />
+                <Field field="ClassID" selected="True" />
+                <Field field="Category" selected="True" />
+                <Field field="ClassName" selected="True" />
+                <Field field="OrderID" selected="True" />
+                <Field field="Quantity" selected="True" />
+                <Field field="Discount" selected="True" />
+                <Field field="CustomerID" selected="True" />
+                <Field field="StoreID" selected="True" />
+                <Field field="OrderDate" selected="True" />
+                <Field field="ShipName" selected="True" />
+                <Field field="ShipAddress" selected="True" />
+                <Field field="ShipCity" selected="True" />
+                <Field field="ShipStateOrProvince" selected="True" />
+                <Field field="ShipPostalCode" selected="True" />
+                <Field field="ShipCountry" selected="True" />
+                <Field field="ShipPhoneNumber" selected="True" />
+                <Field field="PayBy" selected="True" />
+                <Field field="CCNumber" selected="True" />
+                <Field field="Printed" selected="True" />
+                <Field field="customer_FirstName" selected="True" />
+                <Field field="customer_MiddleInit" selected="True" />
+                <Field field="customer_LastName" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="StateOrProvince" selected="True" />
+                <Field field="PostalCode" selected="True" />
+                <Field field="Country" selected="True" />
+                <Field field="PhoneNumber" selected="True" />
+                <Field field="customer_EmailAddress" selected="True" />
+                <Field field="Password" selected="True" />
+                <Field field="PhoneNumber_orig" selected="True" />
+                <Field field="ShipPhoneNumber_orig" selected="True" />
+                <Field field="paid_by" selected="True" />
+                <Field field="fiscal_week" selected="True" />
+                <Field field="timestamp" selected="True" />
+                <Field field="Right_ShipName" selected="True" />
+                <Field field="Right_ShipAddress" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Byte" />
+                <Field name="FirstName" size="9" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="String" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="String" />
+                <Field name="LastName" size="14" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_String" />
+                <Field name="EmailAddress" size="48" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_String" />
+                <Field name="Photograph" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Blob" />
+                <Field name="Bio" size="3581" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_String" />
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="String" />
+                <Field name="SeqNo" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Byte" />
+                <Field name="Title" size="61" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="CoverPix" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Blob" />
+                <Field name="CopyrightYear" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="SuggPrice" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Double" />
+                <Field name="EditionNumber" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Byte" />
+                <Field name="OutOfPrint" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Bool" />
+                <Field name="Pages" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="Disk" size="14" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="LinerNotes" size="2082" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="TOCDoc" size="32" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Byte" />
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Byte" />
+                <Field name="Category" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="V_String" />
+                <Field name="ClassName" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="V_String" />
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Int16" />
+                <Field name="Quantity" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Byte" />
+                <Field name="Discount" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Double" />
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Byte" />
+                <Field name="StoreID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+                <Field name="OrderDate" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="DateTime" />
+                <Field name="ShipName" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="String" />
+                <Field name="ShipAddress" size="30" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_String" />
+                <Field name="ShipCity" size="8" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="String" />
+                <Field name="ShipStateOrProvince" size="2" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="String" />
+                <Field name="ShipPostalCode" size="7" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="String" />
+                <Field name="ShipCountry" size="3" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="String" />
+                <Field name="ShipPhoneNumber" size="16" source="Formula: (Multiple Sources)" type="String" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Byte" />
+                <Field name="CCNumber" size="19" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="String" />
+                <Field name="Printed" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+                <Field name="customer_FirstName" size="8" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="customer_MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="customer_LastName" size="9" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="Address" size="30" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_String" />
+                <Field name="City" size="8" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="StateOrProvince" size="2" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="PostalCode" size="7" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="Country" size="3" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="PhoneNumber" size="16" source="Formula: (Multiple Sources)" type="String" />
+                <Field name="customer_EmailAddress" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="Password" size="8" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="String" />
+                <Field name="Admin" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Bool" />
+                <Field name="PhoneNumber_orig" size="14" source="Formula: [PhoneNumber]" type="String" />
+                <Field name="ShipPhoneNumber_orig" size="14" source="Formula: [ShipPhoneNumber]" type="String" />
+                <Field name="paid_by" size="8" source="Formula: IIF([PayBy]==6, 'Discover', [paid_by])" type="String" />
+                <Field name="fiscal_week" size="4" source="Formula: IF ISNULL([OrderDate]) then [OrderDate] else&#xA;&#xA;&quot;FW&quot;+DateTimeFormat(DateTimeAdd ([OrderDate], +2, &quot;days&quot;) , &quot;%W&quot;)&#xA;&#xA;endif" type="String" />
+                <Field name="timestamp" source="Formula: DateTimeToday()" type="Date" />
+                <Field name="Lat" source="(Multiple Sources)" type="Double" />
+                <Field name="Lon" source="(Multiple Sources)" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="198.0003" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="354.0002" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="42" MaxRecords="">L:\rudu5529\hwi03\hwi03_rudu5529.tde</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>hwi03_rudu5529.tde</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="174.0003" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_c855c6bb8c874050a24ec8351e19aa68_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="354.0002" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="25" MaxRecords="">L:\rudu5529\hwi03\hwi03_rudu5529.xlsx|hwi03_rudu5529</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>hwi03_rudu5529.xlsx
+Table=hwi03_rudu5529</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="354.0002" y="690" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">L:\rudu5529\hwi03\hwi03_rudu5529.txt</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>\t</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>hwi03_rudu5529.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="53.99996" y="138" width="182.5397" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Q4_clean_b_c_d_and_Q7.c</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="126.0003" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">L:\rudu5529\Alteryx\data\book_Q4_clean_phonenumber.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Q4_clean_phonenumber.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Int32" />
+                <Field name="FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="Photograph" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Blob" />
+                <Field name="Bio" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="V_WString" />
+                <Field name="SeqNo" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Int16" />
+                <Field name="Title" size="75" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CoverPix" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Blob" />
+                <Field name="CopyrightYear" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="SuggPrice" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="EditionNumber" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int32" />
+                <Field name="OutOfPrint" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Bool" />
+                <Field name="Pages" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="Disk" size="15" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="LinerNotes" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="TOCDoc" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int32" />
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int16" />
+                <Field name="Category" size="25" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="V_WString" />
+                <Field name="ClassName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="V_WString" />
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Int32" />
+                <Field name="Quantity" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Double" />
+                <Field name="Discount" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Float" />
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="StoreID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="OrderDate" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="DateTime" />
+                <Field name="ShipName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipAddress" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCity" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipStateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCountry" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPhoneNumber" size="30" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int16" />
+                <Field name="CCNumber" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="Printed" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+                <Field name="customer_FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Address" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="City" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="StateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Country" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PhoneNumber" size="30" source="Formula: (Multiple Sources)" type="V_WString" />
+                <Field name="customer_EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Password" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Admin" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Bool" />
+                <Field name="PhoneNumber_orig" size="30" source="Formula: [PhoneNumber]" type="V_WString" />
+                <Field name="ShipPhoneNumber_orig" size="30" source="Formula: [ShipPhoneNumber]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="210.0003" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="366.0002" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="paid_by" type="V_String" size="64" expression="IIF([PayBy]==1, 'cash', NULL())" />
+                <FormulaField field="paid_by" type="V_String" size="64" expression="IIF([PayBy]==2, 'check', [paid_by])" />
+                <FormulaField field="paid_by" type="V_String" size="64" expression="IIF([PayBy]==3, 'AMEX', [paid_by])" />
+                <FormulaField field="paid_by" type="V_String" size="64" expression="IIF([PayBy]==4, 'VISA', [paid_by])" />
+                <FormulaField field="paid_by" type="V_String" size="64" expression="IIF([PayBy]==6, 'Discover', [paid_by])" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>paid_by=IIF([PayBy]==1, 'cash', NULL())
+paid_by=IIF([PayBy]==2, 'check', [paid_by])
+paid_by=IIF([PayBy]==3, 'AMEX', [paid_by])
+...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="462.0002" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_2be251d59e6d4d9d96fb6968f24c43d9_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="522.0003" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="126.0003" y="337" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="258.0002" y="337" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="fiscal_week" type="V_String" size="64" expression="IF ISNULL([OrderDate]) then [OrderDate] else&#xA;&#xA;&quot;FW&quot;+DateTimeFormat(DateTimeAdd ([OrderDate], +2, &quot;days&quot;) , &quot;%W&quot;)&#xA;&#xA;endif" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>fiscal_week=IF ISNULL([OrderDate]) then [OrderDate] else
+
+"FW...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="354.0002" y="337" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_66ce9daa1bed4f158293c62e2fb70bac_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="474.0002" y="337" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="113.9999" y="529" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="210.0003" y="529" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="timestamp" type="V_String" size="64" expression="DateTimeToday()" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>timestamp=DateTimeToday()</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="414.0002" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_6b549d5c10a84038813ff030334efa95_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="426.0002" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">L:\rudu5529\Alteryx\data\book_Q4.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Q4.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings>
+            <Position x="354.0002" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">AuthorID=False,FirstName=False,MiddleInit=False,LastName=False,EmailAddress=False,Photograph=False,Bio=False,ISBNNumber=False,SeqNo=False,Title=False,CoverPix=False,CopyrightYear=False,SuggPrice=False,EditionNumber=False,OutOfPrint=False,Pages=True,Disk=False,LinerNotes=False,TOCDoc=False,CategoryID=False,ClassID=False,Category=False,ClassName=False,OrderID=False,Quantity=True,Discount=True,CustomerID=False,StoreID=False,OrderDate=False,ShipName=False,ShipAddress=False,ShipCity=False,ShipStateOrProvince=False,ShipPostalCode=False,ShipCountry=False,ShipPhoneNumber=False,PayBy=False,CCNumber=False,Printed=False,customer_FirstName=False,customer_MiddleInit=False,customer_LastName=False,Address=False,City=False,StateOrProvince=False,PostalCode=False,Country=False,PhoneNumber=False,customer_EmailAddress=False,Password=False,Admin=False,PhoneNumber_orig=False,ShipPhoneNumber_orig=False,paid_by=False,fiscal_week=False,timestamp=False</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="450.0004" y="582" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_06a17da48dd4416a9b6013f0daf2d7dd_.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="450.0002" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_84e2db6dfd4e4affb357bca59797370b_.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="450.0004" y="749.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_8b724de06fac4068a4584db9227838d0_.yxdb</TempFile>
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="90" width="1158" height="506" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Q4_clean_a_phonenumber</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114.0003" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">L:\rudu5529\Alteryx\data\book_Q3.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Q3.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Int32" />
+                <Field name="FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="Photograph" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Blob" />
+                <Field name="Bio" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="V_WString" />
+                <Field name="SeqNo" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Int16" />
+                <Field name="Title" size="75" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CoverPix" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Blob" />
+                <Field name="CopyrightYear" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="SuggPrice" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="EditionNumber" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int32" />
+                <Field name="OutOfPrint" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Bool" />
+                <Field name="Pages" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="Disk" size="15" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="LinerNotes" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="TOCDoc" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int32" />
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int16" />
+                <Field name="Category" size="25" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="V_WString" />
+                <Field name="ClassName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="V_WString" />
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Int32" />
+                <Field name="Quantity" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Double" />
+                <Field name="Discount" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Float" />
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="StoreID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="OrderDate" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="DateTime" />
+                <Field name="ShipName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipAddress" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCity" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipStateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCountry" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPhoneNumber" size="30" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int16" />
+                <Field name="CCNumber" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="Printed" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+                <Field name="customer_FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Address" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="City" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="StateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Country" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PhoneNumber" size="30" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="customer_EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Password" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Admin" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="258.0002" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="378.0002" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="PhoneNumber_orig" type="V_WString" size="30" expression="[PhoneNumber]" />
+                <FormulaField field="ShipPhoneNumber_orig" type="V_WString" size="30" expression="[ShipPhoneNumber]" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PhoneNumber_orig=[PhoneNumber]
+ShipPhoneNumber_orig=[ShipPhoneNumber]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="510.0002" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="606.0003" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_247fda97654841a4bec2128f985d0c51_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="114.0003" y="265" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="342.0002" y="265" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="210.0003" y="265" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="PhoneNumber" type="V_WString" size="30" expression="Replace([PhoneNumber], '2068815596', '(206)881-5596')" />
+                <FormulaField field="ShipPhoneNumber" type="V_WString" size="30" expression="Replace([ShipPhoneNumber], '2068815596', '(206)881-5596')" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PhoneNumber=Replace([PhoneNumber], '2068815596', '(206)881-55...
+ShipPhoneNumber=Replace([ShipPhoneNumber], '2068815596', '(20...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="522.0003" y="325" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_3f42b1bd70504bc196f7f99b04ded256_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="534.0003" y="265" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Country</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>USA</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Country] = "USA"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="630.0003" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_ec7c704496944c45a72beff02cb30689_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="630.0004" y="301" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_75fecbd0c3874a0fa10271875f8f1046_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="702.0003" y="253" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="PhoneNumber" type="V_WString" size="30" expression="&quot;+1&quot;+[PhoneNumber]" />
+                <FormulaField field="ShipPhoneNumber" type="V_WString" size="30" expression="&quot;+1&quot;+[ShipPhoneNumber]" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PhoneNumber="+1"+[PhoneNumber]
+ShipPhoneNumber="+1"+[ShipPhoneNumber]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="786.0005" y="325" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField field="PhoneNumber" type="V_WString" size="30" expression="&quot;+44 20 7155 &quot;+Right([PhoneNumber], 4)" />
+                <FormulaField field="ShipPhoneNumber" type="V_WString" size="30" expression="&quot;+44 20 7155 &quot;+Right([ShipPhoneNumber], 4)" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>PhoneNumber="+44 20 7155 "+Right([PhoneNumber], 4)
+ShipPhoneNumber="+44 20 7155 "+Right([ShipPhoneNumber], 4)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="714.0004" y="193" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_ac7e1f7a362742fda3f1b5eb4e499714_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="750.0003" y="409" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_6a044b0d5c5d419bb9de12e3f40698b9_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="618.0003" y="325" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Country</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>UK</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Country] = "UK"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="918.0003" y="289" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="942.0003" y="373" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_f3db0e76051b49e2bd5dbe82aa3f6283_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1050" y="289" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">L:\rudu5529\Alteryx\data\book_Q4_clean_phonenumber.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Q4_clean_phonenumber.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54.00016" y="54" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Q3_load</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="138.0003" y="145" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblAuthors`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Int32" />
+                <Field name="FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+                <Field name="Photograph" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="Blob" />
+                <Field name="Bio" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblAuthors`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114.0003" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblBookAuthor`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="V_WString" />
+                <Field name="AuthorID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Int32" />
+                <Field name="SeqNo" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookAuthor`" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="258.0002" y="157" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="AuthorID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="AuthorID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_AuthorID" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="258.0002" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblBooks`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="Title" size="75" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="CoverPix" size="2147483647" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Blob" />
+                <Field name="CopyrightYear" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="SuggPrice" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_String" />
+                <Field name="EditionNumber" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int32" />
+                <Field name="OutOfPrint" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Bool" />
+                <Field name="Pages" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="Int16" />
+                <Field name="Disk" size="15" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="LinerNotes" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+                <Field name="TOCDoc" size="16777216" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBooks`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="378.0002" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ISBNNumber" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ISBNNumber" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ISBNNumber" selected="False" rename="Right_ISBNNumber" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390.0002" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblBookCategories`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblBookCategories`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookCategories`" type="V_WString" />
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblBookCategories`" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="522.0003" y="181" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ISBNNumber" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ISBNNumber" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ISBNNumber" selected="False" rename="Right_ISBNNumber" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="522.0003" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblCategories`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CategoryID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int32" />
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="Int16" />
+                <Field name="Category" size="25" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCategories`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="642.0003" y="193" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="CategoryID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CategoryID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_CategoryID" selected="False" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="738.0003" y="253" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblClasses`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ClassID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="Int16" />
+                <Field name="ClassName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblClasses`" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="882.0003" y="205" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ClassID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ClassID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ClassID" selected="False" rename="Right_ClassID" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="870.0003" y="289" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblOrderDetails`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Int32" />
+                <Field name="ISBNNumber" size="13" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="V_WString" />
+                <Field name="Quantity" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Double" />
+                <Field name="Discount" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrderDetails`" type="Float" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="978.0003" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="ISBNNumber" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="ISBNNumber" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_ISBNNumber" selected="False" rename="Right_ISBNNumber" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1074" y="133" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_2d405fff1b2b4a50808e0ce8430962ee_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1074" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_e6de926234794134b8f756a055faadc0_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1146" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1242" y="217" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_63ee3e7187a046fbaa893826a1a92952_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1122" y="301" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblOrders`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OrderID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="StoreID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int32" />
+                <Field name="OrderDate" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="DateTime" />
+                <Field name="ShipName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipAddress" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCity" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipStateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipCountry" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="ShipPhoneNumber" size="30" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Int16" />
+                <Field name="CCNumber" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="V_WString" />
+                <Field name="Printed" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblOrders`" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1266" y="253" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="OrderID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="OrderID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_OrderID" selected="False" rename="Right_OrderID" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1362" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_88b75ac665684a679ecef296bbfa1b5e_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1362" y="253" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_28db0538e0f6496bb3912efc2d728044_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1434" y="253" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1410" y="337" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="1">L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`</File>
+              <FormatSpecificOptions>
+                <NoProgress>False</NoProgress>
+                <ReadUncommitted>False</ReadUncommitted>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Books.mdb
+Table=`tblCustomers`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CustomerID" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Int32" />
+                <Field name="FirstName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="MiddleInit" size="1" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="LastName" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Address" size="255" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="City" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="StateOrProvince" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PostalCode" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Country" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PhoneNumber" size="30" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="EmailAddress" size="50" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Password" size="16" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="PayBy" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Int16" />
+                <Field name="CCNumber" size="20" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="V_WString" />
+                <Field name="Admin" source="File: L:\rudu5529\Alteryx\data\Books.mdb|`tblCustomers`" type="Bool" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1506" y="289" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="CustomerID" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="CustomerID" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_CustomerID" selected="False" rename="Right_CustomerID" />
+                    <SelectField field="Right_FirstName" selected="True" rename="customer_FirstName" />
+                    <SelectField field="Right_MiddleInit" selected="True" rename="customer_MiddleInit" />
+                    <SelectField field="Right_LastName" selected="True" rename="customer_LastName" />
+                    <SelectField field="Right_EmailAddress" selected="True" rename="customer_EmailAddress" />
+                    <SelectField field="Right_PayBy" selected="False" rename="Right_PayBy" />
+                    <SelectField field="Right_CCNumber" selected="False" rename="Right_CCNumber" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1698" y="289" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1866" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">L:\rudu5529\Alteryx\data\book_Q3.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>book_Q3.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1794" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\rudu5529\AppData\Local\Temp\Engine_872_ad0a03d743d742f8be3c416d44a69988_\Engine_4748_55b940294f5c4629b3cc5d200c95bd6e_.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="76" Connection="True" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="False" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="False" />
+      <Destination ToolID="83" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="83" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="83" Connection="Join" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="83" Connection="Left" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="69" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Reports" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Interactive" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="False" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="False" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="32" Connection="False" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="43" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="45" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Join" />
+      <Destination ToolID="47" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Join" />
+      <Destination ToolID="49" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Join" />
+      <Destination ToolID="51" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Join" />
+      <Destination ToolID="53" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Left" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="53" Connection="Left" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="59" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Left" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Join" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="59" Connection="Join" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="59" Connection="Left" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="64" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="64" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="Join" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="64" Connection="Left" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>hwi03_rudu5529</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
